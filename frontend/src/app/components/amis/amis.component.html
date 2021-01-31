@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <h4>Bonjour marsupilami c'est la list des marsupilami amis sur votre mini carnet d'adresse </h4>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <div *ngFor="let pilami of carnet" class="col-lg-4 col-md-6 col-12 my-4">
+            <div class="card ">
+                <div class="card-header bg-warning">{{pilami.nom}}</div>
+                <div class="card-body">
+                    <img class="card-img-top" src="../../../assets/download.png" style="width: 200px;height: 200px;">
+                    <p class="card-text">Age : {{pilami.age}}</p>
+                    <p class="card-text">Famille : {{ pilami.famille}}</p>
+                    <p class="card-text">Race : {{pilami.race}}</p>
+                    <p class="card-text">Nourriture :{{pilami.nourriture}}</p>
+                </div>
+                <div class="card-footer bg-warning">
+                    <div class="row">
+
+                        <div class="col-6 mx-auto">        
+                            <button (click)="deleteami(pilami.id)" class="btn btn-danger">Supprimer ami</button>
+                        </div>
+                       
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</div>

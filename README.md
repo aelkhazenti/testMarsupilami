@@ -1,4 +1,4 @@
-# test Marsupilami avec NodeJS pour le back (Express.js sous forme d'API) avec un front angular 
+# test Marsupilami with NodeJS for the back (Express.js as an API) and angular in front
 
 
 ## Requirements
